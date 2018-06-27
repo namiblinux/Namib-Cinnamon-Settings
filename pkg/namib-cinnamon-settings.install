@@ -1,0 +1,30 @@
+ 
+post_install() {
+	#replacing config files
+    #\cp -r /etc/namib-gnome-settings/. /
+
+    \cp -r /etc/lightdm_cinnamon/lightdm.conf /etc/lightdm/lightdm.conf
+
+	glib-compile-schemas /usr/share/glib-2.0/schemas
+    echo "GLib schemas compiled"
+
+	#\cp /etc/skel_gnome/.xinitrc /etc/skel_new/.xinitrc
+	
+	#\rm -rf /usr/share/gnome-background-properties
+    #\rm -rf /usr/share/backgrounds/gnome
+
+    #\mkdir -p /usr/share/gnome-background-properties/
+
+    #\ln -s /usr/share/backgrounds/namib/config/gnome-backgrounds.xml /usr/share/gnome-background-properties/gnome-backgrounds.xml
+    #\ln -s /usr/share/backgrounds/namib /usr/share/backgrounds/gnome
+}
+
+post_upgrade() {
+    post_install $1
+}
+
+#post_remove() {
+#    \rm -rf /usr/share/gnome-background-properties/
+#    \rm -rf /usr/share/backgrounds/gnome
+#}
+

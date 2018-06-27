@@ -1,0 +1,10 @@
+[org.cinnamon.desktop.background]
+picture-uri='/usr/share/backgrounds/namib/1802.jpg'
+
+[org.cinnamon.desktop.interface]
+gtk-theme='Materia-Namib'
+icon-theme='Papirus'
+cursor-theme='Breeze'
+
+[org.cinnamon.desktop.wm.preferences]
+theme='Materia-Namib'
