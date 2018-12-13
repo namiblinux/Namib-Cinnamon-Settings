@@ -1,7 +1,7 @@
 pkgname=namib-cinnamon-settings
 pkgdesc='Settings file for Namib Cinnamon'
 pkgver=18.08
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="https://github.com/namiblinux/namib-cinnamon-settings"
 license=('GPL')
