@@ -3,7 +3,7 @@ post_install() {
 	#replacing config files
     #\cp -r /etc/namib-gnome-settings/. /
 
-    \ln -sf /etc/lightdm_cinnamon/lightdm.conf /etc/lightdm/lightdm.conf
+    \cp -r /etc/lightdm_cinnamon/lightdm.conf /etc/lightdm/lightdm.conf
 
 	glib-compile-schemas /usr/share/glib-2.0/schemas
     echo "GLib schemas compiled"
